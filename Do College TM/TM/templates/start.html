@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    
+    <style>
+        .image{
+  background-image: url('static/image/Japan.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+    }
+
+.overlay{
+  width:100%;
+  height: 100%;
+  color: white;
+  font-size:14px;
+  font-family:Tahoma;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(133, 94, 44, 0.6);
+    }
+    
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image">
+		<div class="overlay">
+        <h1 style="font-size: 70px;">Do College</h1></h2> 
+        <form action="" method="POST">
+            <h1 style="letter-spacing: 2px;">{{student_form.as_p}}</h1>  
+            {% csrf_token %}
+            <input type="submit" value="Start" style=
+            "background-color: rgb(247, 239, 189);
+            border: none;
+            color: red;
+            padding: 12px 28px;;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;">
+            <a href="/record/" style=
+            "background-color: rgb(247, 239, 189);
+            border: none;
+            color: red;
+            padding: 12px 28px;;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin: 35px 100px" >Record</a>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

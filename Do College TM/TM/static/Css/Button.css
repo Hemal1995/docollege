@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+  
+}
+/* Style the header links */
+h1{
+  text-align: center;
+}
+
+.header a {
+  float: left;
+  color: orange;
+  text-align: center;
+  font-family: times new roman;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: left;
+
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-family: times new roman; 
+  font-size: 50px;"
+  font-weight: bold;
+
+
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: orange;
+  background-color: lightslategray;
+
+}
+.header-right {
+  float: right;
+}
+.container{
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+hr.sep-3 {
+  border: none;
+  height: 3px;
+  background-image: linear-gradient(to right, #f0f0f0, #8f8f8f, #f0f0f0);
+}
+hr.sep-3::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: orange;
+}
+@media screen and (max-width: 700px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+.image{
+  background-image: url("Japan.JPG");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.overlay{
+  width:100%;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: times new roman;
+  font-weight: bold;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(100,100,100,0.6);
+}
+  ul {
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+  }
+  .button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid orange;
+  margin: 20px 20px 20px 20px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#button-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-5 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: orange;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+
+  ul {
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+  }
+  .button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid orange;
+  margin: 20px 20px 20px 20px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#button-5 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-5 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: orange;
+  position: absolute;
+  transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+  left: 0;
+}
+ /* .round {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;    
+    text-decoration: none;    
+    text-align: center;
+    font-size: 25px;    
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+    letter-spacing: -.065em;
+    font-family: Italic;
+    font-weight: bold;
+    z-index: 1;
+    border-width: 2px;
+    border-style: solid;
+  
+  }
+
+  .round:hover {
+    width: 130px;
+    height: 110px;
+    left: -15%;
+    top: -15%;
+    font-size: 33px;
+    padding-top: 38px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    -moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    z-index: 2;
+    border-width:2px;
+  }
+
+  a.lavendar {
+    color: white;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    width: 110px;
+    height: 20px;
+    padding-bottom: 40px;
+  }
+
+  a.lavendar:hover {
+    color: white;
+    background-color: orange;
+  }
+
+
+  a.mistyrose {
+    color: white;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    width: 110px;
+    height: 20px;
+    padding-bottom: 40px;
+  }
+  a>span{
+    background-color: orange;
+
+  }
+
+  a.mistyrose:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  a.lightblue {
+    color: white;
+    border: 2px solid orange;
+    box-sizing: border-box;
+    width: 110px;
+    height: 20px;
+    padding-bottom: 40px;
+  }
+
+  a.lightblue:hover {
+    background-color:orange;
+    color: white;
+  }
+  
+
+*/

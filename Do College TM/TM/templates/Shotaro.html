@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    
+    <style>
+        .image{
+        background-image: url('/static/image/Japan.jpg');
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        }
+
+        .overlay{
+        width:100%;
+        height: 100%;
+        color: white;
+        font-size:14px;
+        font-family:Tahoma;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(100,100,100,0.5);
+        }
+
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image">
+	<div class="overlay">
+    <h1>Shotaro's RECORDS</h1>
+    <table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Start Time</th>
+        <th>Finish Time</th>
+        <th>Time - hour:minute:second</th>
+    </tr>
+    <br>
+    {% for row in record %}
+    <tr>
+        <td>{{row.name}}</td>
+        <td>{{row.course}}</td>
+        <td>{{row.start_time}}</td>
+        <td>{{row.finish_time}}</td>
+        <td>{{row.time_minute}}</td>
+
+    </tr>
+    {% endfor%}
+    
+    <br>
+    </table>
+    <a href='/' style="background-color: rgb(247, 239, 189);
+    border: none;
+    color: red;
+    padding: 12px 28px;;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;">Home</a>
+    </div>
+    </div>
+</body>
+</html>
